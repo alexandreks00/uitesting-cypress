@@ -12,11 +12,12 @@ jobs:
         run: |
           npm install
           npx cypress install 
-
+     
+      - name: Cypress run
+        run: npx cypress run reports
+        
       - name: Upload reports
         uses: actions/upload-artifact@v2
         with:
           name: reports
           path: cypress/reports
-     
-     
