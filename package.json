@@ -1,0 +1,11 @@
+{
+  "name": "cypress-uitestingplayground",
+  "version": "1.0.0",
+  "description": "cypress uitesting for spriteCloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre Kenji Shimizu",
+  "license": "ISC"
+}
