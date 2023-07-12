@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-12T16:29:56.197Z",
+    "end": "2023-07-12T16:30:17.694Z",
+    "duration": 21497,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7d0a9dc4-c998-481f-a51d-171e222788c4",
+      "title": "",
+      "fullFile": "cypress/e2e/uitesting.spec.cy.js",
+      "file": "cypress/e2e/uitesting.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "09283f9f-f8a3-4b92-86d8-ebfbb1211a4d",
+          "title": "Sauce Demo UI Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Load delay",
+              "fullTitle": "Sauce Demo UI Testing Load delay",
+              "timedOut": null,
+              "duration": 6313,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"/loaddelay\"]').click();\ncy.get('button.btn.btn-primary', {\n  timeout: 300000\n}).should('be.visible');",
+              "err": {},
+              "uuid": "cbc8e9b8-49a2-4e8c-9942-f0456ca9884b",
+              "parentUUID": "09283f9f-f8a3-4b92-86d8-ebfbb1211a4d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Progress bar",
+              "fullTitle": "Sauce Demo UI Testing Progress bar",
+              "timedOut": null,
+              "duration": 13837,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[href=\"/progressbar\"]').click();\ncy.get('#startButton').click();\ncy.get('#progressBar', {\n  timeout: 1000000\n}).should('have.text', '75%');\ncy.get('#stopButton').click();",
+              "err": {},
+              "uuid": "b81cad9b-8e24-48ce-868f-88a48bb15f45",
+              "parentUUID": "09283f9f-f8a3-4b92-86d8-ebfbb1211a4d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cbc8e9b8-49a2-4e8c-9942-f0456ca9884b",
+            "b81cad9b-8e24-48ce-868f-88a48bb15f45"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20150,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "html": true,
+        "json": true,
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

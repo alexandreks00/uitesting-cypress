@@ -83,7 +83,7 @@ context('API Testing', () => {
             expect(response.status).to.eq(200);
             expect(response.body.id).to.eq(randomId);
   
-            const invalidPetId = 98765; // Replace with an invalid pet ID
+            const invalidPetId = 98765; // Replaced with an invalid pet ID
   
             cy.request({
               method: 'GET',
@@ -93,7 +93,7 @@ context('API Testing', () => {
               expect(response.status).to.eq(404);
             });
   
-            const nonExistingPetId = 99999; // Replace with a non-existing pet ID
+            const nonExistingPetId = 99999; // Replaced with a non existing pet ID
   
             cy.request({
               method: 'GET',
