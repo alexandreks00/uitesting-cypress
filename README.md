@@ -39,11 +39,9 @@ UI testing plays a crucial role in ensuring a seamless user experience. The "Loa
                  
 ## Importance of "GET /pet/{petId}" and "POST /pet" Tests for API Testing
 API testing is critical to ensure the reliability and functionality of your backend services. The "GET /pet/{petId}" test is vital for verifying the correctness of retrieving specific pet information based on its ID. This test helps validate the stability and accuracy of your API response, ensuring the requested pet details are returned accurately. Similarly, the "POST /pet" test plays a crucial role in API testing by confirming the API's ability to handle the creation of new pet records. This test ensures that the appropriate data is saved and that the API responds with the expected success status code, validating the reliability of your API's data creation capabilities.
+![image](https://github.com/alexandreks00/uitesting-cypress/assets/17753947/c0e66d15-7d11-4b27-aeba-561a64801639)
 
-## Conclusion
 
-Congratulations! You have successfully set up Cypress, executed tests using the Cypress Test Runner, and generated stylish Mochawesome reports for easy analysis. By combining the power of Cypress and Mochawesome, you can enhance your testing process, gain insights into your applications' reliability and performance, and deliver high-quality software. Use the generated reports to track issues, collaborate with your team, and make informed decisions.
-Remember to explore the Cypress and Mochawesome documentation for advanced configuration options, additional features, and further customization possibilities. Happy testing and reporting!
 
 ## Additional Resources
 
